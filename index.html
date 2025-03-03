@@ -49,24 +49,11 @@
 
     <section id="music">
         <h3>Фонова музика</h3>
-        <audio id="background-music" loop>
+        <audio controls>
             <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mp3">
+            Ваш браузер не підтримує елемент audio.
         </audio>
-        <button id="play-music">🎶 Включити музику</button>
     </section>
-
-    <script>
-        document.getElementById("play-music").addEventListener("click", function() {
-            let music = document.getElementById("background-music");
-            if (music.paused) {
-                music.play();
-                this.textContent = "🎶 Музика грає";
-            } else {
-                music.pause();
-                this.textContent = "🎶 Включити музику";
-            }
-        });
-    </script>
 
     <script src="script.js"></script>
 
